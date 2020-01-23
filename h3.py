@@ -1,0 +1,5 @@
+first_number=input("Enter first number")
+first_number=int(first_number)
+second_number=input("Enter second number")
+second_number=int(second_number)
+print(first_number+second_number>5, first_number+second_number<5 , first_number+second_number==5)
