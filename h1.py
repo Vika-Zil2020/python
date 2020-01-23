@@ -1,0 +1,7 @@
+wine=input("Enter the price of wine")
+wine=int(wine)
+whisky=input("Enter the price of whisky")
+whisky=int(whisky)
+tequila=input("Enter the price of tequila")
+tequila=int(tequila)
+print(wine==whisky or wine==tequila or whisky==tequila)
