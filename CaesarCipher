@@ -1,0 +1,10 @@
+text=input("Please enter a word: ")
+key=int(input("Please enter an arbitrary number: "))
+def CaesarCipher(text, key):
+	cipher = ""
+	for letter in text:
+		shifted=ord(letter)+key
+		cipher+=chr(shifted)
+	return cipher
+
+print(CaesarCipher(text, key))
