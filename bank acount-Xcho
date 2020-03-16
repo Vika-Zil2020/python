@@ -1,0 +1,33 @@
+class BankAccount:
+	def __init__(self, name, surname, email, bank_balance=0):
+		self.name = name
+		self.surname = surname
+		self.email = email
+		self.bank_balance = bank_balance
+	def get_balance(self):
+		return self.bank_balance
+	def with_draw(self, amount):
+		self.bank_balance -= amount
+	def deposit(self, amount):
+		self.bank_balance += amount
+while True:
+	name = input("enter your name: ")
+	surname = input("enter your surname: ")
+	email = input("enter your emil: ")
+	user = BankAccount(name, surname, email)
+	user_choose = " "
+	while True:
+		user_choose = input("press w for withdraw, press a to add to balance, press g to see your balance, to exit press s: ")
+		if user_choose == "w":
+			user_withdraw= int(input("How much you want to withdraw: "))
+			user.with_draw(user_withdraw)
+		elif user_choose == "a":
+			user_addmoney = int(input("How much you want to add to your account: "))
+			user.deposit(user_addmoney)
+		elif user_choose == "g":
+			print(user.get_balance())
+		elif user_choose == "s":
+			break
+	choose = input("Press e to exit, press c to set another user: ")
+	if choose == "e":
+		break
