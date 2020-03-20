@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # my_list = []
 # for a in range(0,10):
 # 	for b in range(0,10):
@@ -44,3 +45,14 @@ def play_chingachung(user, computer):
         elif user == 'Rock' and computer == 'Paper':
             return "Player - ", user, "Computer - ", computer, "**** Second player win! "
 print(play_chingachung(user, computer))
+=======
+my_list = []
+for a in range(0,10):
+	for b in range(0,10):
+		for c in range(0,10):
+			num =str(a)+str(b)+str(c)
+			if num not in my_list and int(num)<1000:
+				my_list.append(num)
+
+print(my_list)
+>>>>>>> 3ca10fa45393c9830384d3422159e3e528716334

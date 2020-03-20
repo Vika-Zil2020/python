@@ -1,0 +1,16 @@
+num_list = []
+class Number:
+   def __init__(self, num_list, target):
+        self.num_list = num_list
+        self.target = target
+   def indices(self):
+        for i in range(0, len(self.num_list)):
+        for j in range(0, len(self.num_list)):
+          if self.num_list[i] + self.num_list[j] == self.target and i < j:
+                num_list.append(i)
+                num_list.append(j)
+                return num_list
+
+my_list = Number ([10,20,10,40,50,60,70], 50)
+
+print(my_list.indices())
